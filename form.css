@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+}
+label {
+  color: white;
+}
+form {
+  background-color: rgba(107, 130, 164, 0.557);
+}

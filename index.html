@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- le st-navbar désigne le style sur la barre de navigation -->
+        <nav class="st-navbar navbar navbar-dark bg-dark fixed-top py-4">
+
+            <div class="container-fluid d-flex">
+                <!-- st-navbar-a style du lien du titre de l'entreprise -->
+                <a class="st-navbar-a navbar-brand fs-3 ms-5" href="#">TechNova </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+
+                    <div class="offcanvas-header">
+
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">TechNova </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5" aria-current="page" href="form.html"> <i
+                                        class="fa-solid fa-circle-user"></i>
+                                    compte
+
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#accueil">accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#propos">à propos de nous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">nos services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#réalisations">nos réalistions</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    d'autres de mes sites
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="https://aboubakar2007.github.io/site-levage/">site sur l'élevage</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://aboubakar2007.github.io/site-agriculture/">site sur
+                                            l'agriculture</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://aboubakar2007.github.io/site-vente-d-article/">site sur les
+                                            ventes d'articles</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- home pour la page d'accueil -->
+        <section id="accueil">
+            <div class="home  row mt-4 mt-lg-5 mt-md-5 pb-lg-5 pb-md-5 d-flex  ">
+                <div
+                    class="col-md-6 col-lg-6 mt-lg-3 mt-md-5 justify-content-center py-md-5 py-lg-5 order-lg-1 order-md-1 order-2">
+                    <!--le st pour le style du h1  -->
+                    <h1 class="st-home-h1 mt-2 mt-md-4 mt-lg-5 display-4">Bienvenue chez TechNova </h1>
+                    <!-- le st pour le style du p -->
+                    <p class="st-home-p mt-lg-5 mt-md-4 mt-2"> Nous créons des solutions informatiques innovantes pour
+                        vous
+                        aider à
+                        atteindre vos
+                        objectifs.Développement web, assistance technique, et bien plus encore !
+                    </p>
+                    <div class="button mt-3 mt-lg-5 mt-md-4    ">
+                        <a href="form.html"><button class=" st-bouton1 btn rounded-0 me-3">créer un compte</button></a>
+                        <a href="form.html"><button class=" st-bouton2 btn rounded-0 me-3">se connecter</button></a>
+                    </div>
+                    <p class="st-txt mt-lg-5 mt-md-4 mt-2">Transformez vos idées en réalité
+                        avec nous.</p>
+                </div>
+                <div class="col-md-6 col-lg-6 mt-4 py-5 order-lg-2 order-md-2 order-1">
+                    <img src="./images/home/pexels-pixabay-159235.jpg " class="w-100" alt="">
+                </div>
+
+
+
+            </div>
+        </section>
+        <section id="propos">
+            <div class="row home2">
+                <h1 class="texte d-flex justify-content-center mb-5">À Propos de TechNova</h1>
+                <div class="col col-12 col-lg-6 col-md-6 ">
+                    <h3 class="texte d-flex justify-content-center mb-3">Qui sommes-nous ?</h3>
+                    <p class="texte"> TechNova est une société spécialisée dans les solutions informatiques Nous
+                        accompagnons les entreprises et les particuliers dans leur transformation digitale en
+                        proposantdes services de développement web, assistance informatique et cybersécurité.
+                        Notre objectif ? Offrir des solutions technologiques fiables, performantes et adaptées aux
+                        besoins de nos clients.
+                    </p>
+                </div>
+                <div class="col col-12 col-lg-6 col-md-6">
+                    <h3 class="texte d-flex justify-content-center mb-3">Notre Histoire</h3>
+                    <p class="texte">L’informatique a toujours été une passion. Après plusieurs années d’expérience dans
+                        le
+                        domaine du
+                        développement et du support technique, nous avons décidé de créer [Nom de ton entreprise] pour
+                        mettre notre expertise au service de ceux qui en ont besoin.
+                        Aujourd’hui, nous travaillons avec des entreprises et des entrepreneurs pour leur fournir des
+                        solutions innovantes qui boostent leur activité.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+
+            <div class="row home3 gy-4 ">
+                <h1 class="texte  mt-4 d-flex justify-content-center">nos services</h1>
+                <div class="col col-lg-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/service/940-site.webp" class="card-img-top h-50" alt="..."
+                            style="object-fit: cover;">
+                        <div class="card-body">
+                            <h1 class="fs-5">Développement de Sites Web Sur Mesure</h1>
+                            <p class="card-text">Création de sites web personnalisés pour répondre à vos besoins
+                                spécifiques, qu'il s'agisse de sites vitrine ou de blogs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/service/pexels-n-voitkevich-6214474.jpg" class="card-img-top h-50" alt="..."
+                            style="object-fit: cover;">
+                        <div class="card-body">
+                            <h1 class="fs-5 ">Création de Sites E-Commerce</h1>
+                            <p class="card-text">Développement de boutiques en ligne avec des fonctionnalités de
+                                paiement sécurisé et une gestion simplifiée des produits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/service/developpement-mobile.jpg" class="card-img-top h-50" alt="..."
+                            style="object-fit: cover;">
+                        <div class="card-body">
+                            <h1 class="fs-5"> Développement d'Applications Mobiles</h1>
+                            <p class="card-text">Création d'applications mobiles pour Android et iOS, adaptées à vos
+                                objectifs et à une utilisation fluide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/service/Support.jpg " class="card-img-top h-50" alt="..."
+                            style="object-fit: cover;">
+                        <div class="card-body">
+                            <h1 class="fs-5">Maintenance et Support Technique</h1>
+                            <p class="card-text">Assurez la performance continue de votre site avec notre maintenance
+                                régulière et un support technique réactif.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/service/optimisation-referencement.webp" class="card-img-top h-50" alt="..."
+                            style="object-fit: cover;">
+                        <div class="card-body">
+                            <h1 class="fs-5">Optimisation du Référencement (SEO)</h1>
+                            <p class="card-text">Amélioration du référencement naturel pour booster la visibilité de
+                                votre site sur les moteurs de recherche.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/service/conception.webp.webp" class="card-img-top h-50" alt="..."
+                            style="object-fit: cover" ;>
+                        <div class=" card-body">
+                            <h1 class="fs-5">Intégration d'API et Services Tiers</h1>
+                            <p class="card-text">Intégration d'API et de services externes pour connecter et enrichir
+                                les fonctionnalités de votre site ou application.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="réalisations">
+            <div class="row home4">
+                <h1 class="texte d-flex justify-content-center my-5">nos réalisations</h1>
+                <div class="col-lg-9 col-md-8 col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/réalisations/Capture d’écran 2025-03-30 150118.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/réalisations/Capture d’écran 2025-03-30 150232.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/réalisations/Capture d’écran 2025-03-30 150316.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/réalisations/Capture d’écran 2025-03-30 150400.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/réalisations/Capture d’écran 2025-03-30 150430.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-md-4 mt-lg-5">
+
+                    <p class="texte my-lg-5 my-md-4 my-2 d-flex justify-content-center">Découvrez quelques-uns des
+                        projets que j'ai
+                        développés ! Chaque capture
+                        d'écran
+                        représente une
+                        solution unique que j'ai conçue avec passion et expertise.</p>
+                    <i class="texte">Curieux d'en voir plus ? Consultez le code source et explorez mes projets en détail
+                        sur GitHub
+                        !</i>
+                    <a href="https://github.com/aboubakar2007">voir mes projets sur GitHub</a>
+
+                    <button type="button" class="mm-btn btn btn-rounded-none mt-lg-5 ms-lg-5 mt-2 ms-3 mt-md-4 ms-md-4 "
+                        id="liveToastBtn">nous
+                        contacter
+                        par
+                        mail</button>
+
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3 ">
+                        <div id="liveToast" class="toast " role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <img src="./images/home/pexels-pixabay-159235.jpg" class="rounded me-2 w-25" alt=""
+                                    style="background-color: blue;">
+                                <strong class="me-auto">TechNova</strong>
+                                <small>à l'instant</small>
+                                <button type="button" class="btn-close " data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                <a href="mailto:">aboubakarnoursery@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
