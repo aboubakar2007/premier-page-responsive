@@ -1,9 +1,108 @@
+:root {
+  --noir: #000000;
+  --noir-3: #161616;
+  --bordure: rgba(255, 255, 255, 0.12);
+  --blanc: #ffffff;
+  --gris: rgba(255, 255, 255, 0.7);
+  --rouge: #e11d1d;
+  --vert: #16a34a;
+  --bleu: rgb(107, 130, 164);
+}
+
 body {
-  background-color: black;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(225, 29, 29, 0.18), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(107, 130, 164, 0.2), transparent 45%),
+    var(--noir);
+  color: var(--blanc);
+  font-family: "Inter", system-ui, sans-serif;
+}
+.form-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+.form-logo {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--blanc);
+  text-decoration: none;
+}
+.form-logo span {
+  color: var(--rouge);
+}
+.form-carte {
+  margin: 0;
+  padding: 32px 20px;
+  background: var(--noir-3);
+  border: 1px solid var(--bordure);
+  border-top: 4px solid var(--bleu);
+  border-radius: 16px;
+}
+.form-carte h1 {
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.form-sous-titre {
+  color: var(--gris);
+  margin-bottom: 8px;
 }
 label {
-  color: white;
+  color: var(--blanc);
+  font-weight: 500;
 }
-form {
-  background-color: rgba(107, 130, 164, 0.557);
+.form-control {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--bordure);
+  color: var(--blanc);
+  padding: 11px 14px;
+  border-radius: 8px;
+}
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--bleu);
+  color: var(--blanc);
+  box-shadow: 0 0 0 3px rgba(107, 130, 164, 0.35);
+}
+.form-bouton,
+.form-retour {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s;
+}
+.form-bouton {
+  background: var(--rouge);
+  border: 2px solid var(--rouge);
+  color: var(--blanc);
+}
+.form-bouton:hover {
+  background: transparent;
+}
+.form-retour {
+  border: 2px solid var(--vert);
+  color: var(--blanc);
+}
+.form-retour:hover {
+  background: var(--vert);
+  color: var(--blanc);
+}
+
+@media (min-width: 576px) {
+  .form-carte {
+    padding: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .form-bouton,
+  .form-retour {
+    flex: 1;
+  }
 }
